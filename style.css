@@ -1,0 +1,44 @@
+body {
+    user-select: none;
+}
+
+#cases-container, #your-area {
+    width: 400px;
+    display: grid;
+    grid-template: "g g g g g g";
+    row-gap: 30px;
+    column-gap: 30px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+#your-area {
+    margin-top: 100px;
+}
+
+.case {
+    width: 60px;
+    height: 45px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 8px;
+}
+
+.case-closed {
+    background-color: lightgray;
+    font-size: 20px;
+    border: 2px solid darkgray;
+    cursor: pointer;
+}
+
+.case-open {
+    background-color: white;
+    font-size: 12px;
+    border: 2px solid black;
+    cursor: no-drop;
+}
